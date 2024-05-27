@@ -5,7 +5,6 @@ public class Car {
      int Model , Price ;
      public static void main(String[] args) {
            Car Audi = new Car();
-           Car BMW = new Car();
            Audi.name = "Audi";
            Audi.Model= 2020;
            Audi.Price = 29000;
