@@ -1,4 +1,5 @@
 package MainJava.Constructor;
+import MainJava.Constructor.ZeroArgumentConstructor;
 
 public class CopyConstructor {
     int a , b ,c ;
@@ -24,6 +25,8 @@ public class CopyConstructor {
         obj2.show();
         CopyConstructor obj3 = new CopyConstructor(obj2);
         obj3.show();
+        ZeroArgumentConstructor obj6 = new ZeroArgumentConstructor();
+        obj6.first();
     
         System.out.println(obj2.d);
    

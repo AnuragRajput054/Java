@@ -1,4 +1,4 @@
-package MainJava;
+package MainJava.Keywords;
 
 public class InstanceVariable {
     int a = 10 ;    // instance Variable

@@ -18,5 +18,11 @@ public class ZeroArgumentConstructor {
     }
     void show(){
         System.out.println(a+" "+b+" "+c);
+
+
+    }
+
+    public void first(){
+        System.out.println("Hello: My dear friends");
     }
 }
