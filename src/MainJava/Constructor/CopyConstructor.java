@@ -1,5 +1,5 @@
 package MainJava.Constructor;
-import MainJava.Constructor.ZeroArgumentConstructor;
+//import MainJava.Constructor.ZeroArgumentConstructor;
 
 public class CopyConstructor {
     int a , b ,c ;

@@ -6,8 +6,8 @@ public class ZeroArgumentConstructor {
         System.out.println("Hello : This is no Argument Constructor");
     }
     public static void main(String[] args) {
-        ZeroArgumentConstructor s1 = new ZeroArgumentConstructor();
-        ZeroArgumentConstructor s2 = new ZeroArgumentConstructor();
+     //   ZeroArgumentConstructor s1 = new ZeroArgumentConstructor();
+     //   ZeroArgumentConstructor s2 = new ZeroArgumentConstructor();
         ZeroArgumentConstructor s3 = new ZeroArgumentConstructor(10,20,30);
         s3.show();
     }

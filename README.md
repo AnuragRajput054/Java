@@ -68,3 +68,5 @@ Ans    * final :- It's Keyword (Explain this).
 
      ->  For example, there is a license with us, and we have only one database connection or suppose our JDBC driver does not allow us to do multithreading, then the Singleton class comes into the picture and makes sure that at a time, only a single connection or a single thread can access the connection.
 
+# 5 Behaviour of Constructor in inherritance in java
+Ans - Whenever the object of child class is created , it will forward a request of memory allocation for the default constructor of parents class. { in Simple language jab bhi hum child class ka object create krte hai tab sabse pehle parent class ke liy constructor ki memory allocation hogi // parents class ka constructor call hoga}.
