@@ -1,7 +1,7 @@
 package MainJava.Constructor;
 //import MainJava.Constructor.ZeroArgumentConstructor;
 
-public class CopyConstructor {
+public class CopyConstructor implements Cloneable {
     int a , b ,c ;
     final int d ;
      CopyConstructor(int a , int b , int c ){
@@ -17,18 +17,25 @@ public class CopyConstructor {
          
      }
 
-     public static void main(String[] args) {
+     /**
+     * @param args
+     * @throws CloneNotSupportedException
+     */
+    public static void main(String[] args) throws CloneNotSupportedException {
         
-        CopyConstructor obj1 = new CopyConstructor(10, 20, 30);
-        CopyConstructor obj2 = new CopyConstructor(obj1);
+        CopyConstructor obj1 = new CopyConstructor(10, 20, 30);  // Normal object creation
+        CopyConstructor obj2 = new CopyConstructor(obj1);       // copy constructor
+        CopyConstructor obj3 = new CopyConstructor(obj2);         // ""
+        ZeroArgumentConstructor obj6 = new ZeroArgumentConstructor();   // No Argument Constructor
+
+        CopyConstructor obj = (CopyConstructor)obj1.clone(); // clone an object by using Clonable Interface 
         obj1.show();
         obj2.show();
-        CopyConstructor obj3 = new CopyConstructor(obj2);
         obj3.show();
-        ZeroArgumentConstructor obj6 = new ZeroArgumentConstructor();
         obj6.first();
-    
         System.out.println(obj2.d);
+        System.out.println("Anurag  "+obj.a+" "+obj.b);
+
    
     
 

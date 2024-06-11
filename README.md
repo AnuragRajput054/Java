@@ -70,3 +70,33 @@ Ans    * final :- It's Keyword (Explain this).
 
 # 5 Behaviour of Constructor in inherritance in java
 Ans - Whenever the object of child class is created , it will forward a request of memory allocation for the default constructor of parents class. { in Simple language jab bhi hum child class ka object create krte hai tab sabse pehle parent class ke liy constructor ki memory allocation hogi // parents class ka constructor call hoga}.
+
+# 6 Examples of Built-in Packages
+        -> java.sql: Provides the classes for accessing and processing data stored in a database. Classes like Connection, DriverManager, PreparedStatement, ResultSet, Statement, etc. are part of this package.
+        ->  java.lang: Contains classes and interfaces that are fundamental to the design of the Java programming language. Classes like String, StringBuffer, System, Math, Integer, etc. are part of this package.
+        ->java.util: Contains the collections framework, some internationalization support classes, properties, random number generation classes. Classes like ArrayList, LinkedList, HashMap, Calendar, Date, Time Zone, etc. are part of this package.
+        -> java.net: Provides classes for implementing networking applications. Classes like Authenticator, HTTP   Cookie, Socket, URL, URLConnection, URLEncoder, URLDecoder, etc. are part of this package.
+        java.io: Provides classes for system input/output operations. Classes like BufferedReader, BufferedWriter, File, InputStream, OutputStream, PrintStream, Serializable, etc. are part of this package.
+        ->    java.awt: Contains classes for creating user interfaces and for painting graphics and images. Classes like Button, Color, Event, Font, Graphics, Image, etc. are part of this package.
+
+# 7 Generic in Java .
+
+  Note:-  When we have Generic in java then Why we are not using it everyWhere , instance of this we use normal data types.
+Ans: 
+      * While generics in Java offer significant benefits in terms of type safety, compile-time type checking, and code readability, there are situations where using normal data types may still be preferred or necessary. Here are some reasons why generics may not be used everywhere:
+
+       -> Legacy Code: Older codebases may not have been updated to use generics due to backward compatibility concerns. Rewriting such code to use generics can be time-consuming and may introduce new bugs.
+
+       -> Performance Overhead: Generics can sometimes introduce a small performance overhead due to type erasure (where generic type information is erased at runtime). In performance-critical applications, this overhead might be a concern.
+
+      ->  Simplicity and Clarity: In some cases, using normal data types can make code simpler and clearer, especially for small-scale projects or code snippets where the benefits of generics are not significant.
+
+      ->  Interoperability: When working with libraries or APIs that do not use generics, you may need to use normal data types to maintain compatibility.
+
+        Specialized Use Cases: There are specialized use cases where generics may not be suitable or where the overhead of using generics outweighs the benefits.
+
+  # 8 . Why we are using Marker Interface, it does not have any methods then why we are using it .
+Ans .  
+       'Marker interfaces are used to signal the JVM  that this class is going possesses a specific property or behavior', allowing for runtime type identification and enabling specific actions based on that property. They provide a clean way to indicate that an object can be treated in a particular manner without adding methods.
+     
+    

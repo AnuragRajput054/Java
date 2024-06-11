@@ -3,6 +3,7 @@ package Inheritances;
 public class Anurag {
     public static void main(String[] args) {
        B obj1 = new B(); 
+       System.out.println(obj1.getClass());
        obj1.show();
 
     }
