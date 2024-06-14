@@ -8,7 +8,8 @@ public class First {
         list.addFirst(3);
         list.addLast(6);
         list.addAt(100, 3);
-       list.deleteFromFirst();
+        list.insertRec(3, 3);
+         list.deleteFromFirst();
 
      
         list.addFirst(0);
@@ -16,7 +17,7 @@ public class First {
         list.addFirst(2);
      //   list.deleteFromLast();
        // list.del(2);
-        list.display();
+         list.display();
         
         System.out.println(list.size);
         LinkListUse<String> list2 = new LinkListUse<>();
@@ -126,6 +127,7 @@ public class First {
         size -= 1 ;
 
     }
+
 
 
    
