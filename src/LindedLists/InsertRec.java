@@ -12,10 +12,7 @@ public class InsertRec {
         listRec.insertRec(3, 2);
         listRec.insertRec(6, 5);
         listRec.display();
-       // listRec.middle(listRec.head);
-     //  listRec.sortedList(listRec.head);
-       listRec.reverse2(listRec.head);
-       listRec.display();
+      listRec.display();
     
      }
     
@@ -93,10 +90,8 @@ class LinkListUse4{
           }
     } 
    //==================================
-   // Reverse a list Using Recursion
-
+                                                    // Reverse a list Using Recursion
      public void reverse(Node node){
-
         if(node== tail){
             node = tail;
             return;
@@ -107,9 +102,8 @@ class LinkListUse4{
         tail.next = null;
      }
 
-// USing Iteration
-
-  public void reverse2(Node head){
+                                                   // USing Iteration
+  public Node reverse2(Node head){
   
         Node previous = null;
         Node current = head;
@@ -118,14 +112,61 @@ class LinkListUse4{
               current.next = previous;
               previous = current;
               current = next;
-
         }
+        return previous;
 
   }
+
+
+  // ===================================
+                                                                    // Reorder List
+
+                        //   public void reorderList(ListNode head) {
+                        //     if (head == null || head.next == null) {
+                        //         return;
+                        //     }
+                        //     ListNode mid = middleNode(head);
+                        //     ListNode hs = reverseList(mid);
+                        //     ListNode hf = head;
+                        //     while (hf != null && hs != null) {
+                        //         ListNode temp = hf.next;
+                        //         hf.next = hs;
+                        //         hf = temp;
+
+                        //         temp = hs.next;
+                        //         hs.next = hf;
+                        //         hs = temp;
+                        //     }
+                        //     if (hf != null) {
+                        //         hf.next = null;
+                        //     }
+                        // }
+
+                        //  public ListNode reverseList(ListNode head){
+                        //     ListNode previous = null;
+                        //     ListNode current = head;
+                        //     while(current != null){
+                        //         ListNode next = current.next;
+                        //           current.next = previous;
+                        //           previous = current;
+                        //           current = next;
+                        //     }
+                        //     return previous;
+                        // }
+                        // public ListNode middleNode(ListNode head) {
+                        //      ListNode slow = head;
+                        //       ListNode fast = head;
+                        //       while(fast != null && fast.next != null){
+                        //         slow = slow.next;
+                        //         fast = fast.next.next;
+                        //       }
+                        //       return slow;  
+                        // }
+                        // }
   
 
   // =================================== 
- //  Sort list
+ //                                                         Sort list
 //     public ListNode sortList(ListNode head) {
 
 //         if(head==null || head.next==null){
@@ -179,6 +220,8 @@ class LinkListUse4{
 //     }
 
 
+
+
     class Node {
         int value;
         Node next;
@@ -192,3 +235,97 @@ class LinkListUse4{
     }
 
 }
+
+//=========================================
+// Reverse a list in between
+
+//     public ListNode reverseBetween(ListNode head, int left, int right) {
+    
+//       if(left == right){
+//         return head;
+//       }
+//       ListNode previous = null ;
+//       ListNode current =   head;
+//       for(int i = 0 ; current != null && i < left-1 ; i++){
+//             previous = current ;
+//             current = current.next;
+//       }
+//       ListNode last = previous ;
+//       ListNode newEnd = current;
+//       ListNode  next = current.next;
+//       for(int i = 0 ; current != null && i < right-left+1 ; i++){
+//             current.next = previous;
+//             previous = current ;
+//             current = next ;
+//             if(next != null){
+//                 next = next.next;
+//             }
+//       }
+
+//       if(last != null){
+//         last.next = previous;
+//       }else{
+//          head = previous;
+//       }
+
+//       newEnd.next = current;
+//       return head;
+
+//     }
+
+// }
+
+
+//======================================
+
+//   Pallindrom list 
+
+// public boolean isPalindrome(ListNode head) {
+//     ListNode mid = middleNode(head);
+//     ListNode headSecond = reverseList(mid);
+//     ListNode rereverseHead = headSecond;
+
+//     while (head != null && headSecond != null) {
+//         if (head.val != headSecond.val) {
+//             break;
+//         }
+//         head = head.next;
+//         headSecond = headSecond.next;
+//     }
+//     reverseList(rereverseHead);
+
+//     return head == null || headSecond == null;
+// }
+
+//     public ListNode reverseList(ListNode head) {
+//     if (head == null) {
+//         return head;
+//     }
+//     ListNode prev = null;
+//     ListNode present = head;
+//     ListNode next = present.next;
+
+//     while (present != null) {
+//         present.next = prev;
+//         prev = present;
+//         present = next;
+//         if (next != null) {
+//             next = next.next;
+//         }
+//     }
+//     return prev;
+// }
+
+// public ListNode middleNode(ListNode head) {
+//     ListNode s = head;
+//     ListNode f = head;
+
+//     while (f != null && f.next != null) {
+//         s = s.next;
+//         f = f.next.next;
+//     }
+//     return s;
+// }
+
+
+// }
