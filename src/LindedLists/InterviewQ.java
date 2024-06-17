@@ -301,7 +301,7 @@ public ListNode reverseKGroupINAlternate(ListNode head, int k) {
     return head;
 }
 //====================================
-
+// https://leetcode.com/problems/rotate-list/
 public ListNode rotateRight(ListNode head, int k) {
      
     if(head == null || head.next == null || k <=0){
@@ -328,6 +328,6 @@ return head;
 
 }
 
-}
+
 
 }
